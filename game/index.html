@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Copper Ladle — a tiny bistro rush</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #1d130b; height: 100%; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: "Trebuchet MS", "Segoe UI", sans-serif; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #b98d5f; image-rendering: auto; }
+  #help { color: #c9b48a; font-size: 13px; text-align: center; padding: 8px 12px 12px; line-height: 1.5; }
+  #help b { color: #ffd94d; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">
+    <b>WASD / arrows</b> move &nbsp;·&nbsp; <b>E / Space</b> use a station &nbsp;·&nbsp; <b>mouse</b> click a station to use it, click the floor to walk &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>M</b> mute<br>
+    Chop, grill, plate and serve before the orders walk out. Three-minute shift — good luck, chef.
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
